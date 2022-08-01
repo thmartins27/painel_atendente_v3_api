@@ -5,3 +5,6 @@
 
 
 execure `npx lint-staged`
+
+
+configuração do jest
