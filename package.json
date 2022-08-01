@@ -6,5 +6,22 @@
   "repository": "https://github.com/thmartins27/painel_atendente_v3_api.git",
   "author": "thmartins <thiago.olivmartins@gmail.com>",
   "license": "MIT",
-  "private": true
+  "standard": {
+    "ignore": []
+  },
+  "private": true,
+  "scripts": {
+    "test": "standard && node test.js",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.js": [
+      "standard --fix"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "standard": "^17.0.0"
+  }
 }
